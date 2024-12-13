@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktų forma</title>
+    <link rel="stylesheet" href="LD12.css">
+</head>
+<body>
+    <h1>Kontaktų forma</h1>
+    <form id="contactForm">
+        <label for="firstName">Vardas:</label><br>
+        <input type="text" id="firstName" required><br>
+
+        <label for="lastName">Pavardė:</label><br>
+        <input type="text" id="lastName" required><br>
+
+        <label for="email">El. paštas:</label><br>
+        <input type="email" id="email" required><br>
+
+        <label for="phone">Telefono numeris:</label><br>
+        <input type="tel" id="phone" pattern="^\+370[0-9]{8}$" required><br>
+
+        <label for="address">Adresas:</label><br>
+        <input type="text" id="address" required><br>
+
+        <label>Klausimas 1: Ar mūsų svetainė yra naudinga?</label><br>
+        <input type="number" id="q1" min="1" max="10" required><br>
+
+        <label>Klausimas 2: Ar rekomenduotumėte mus draugams?</label><br>
+        <input type="number" id="q2" min="1" max="10" required><br>
+
+        <label>Klausimas 3: Ar informacija aiški?</label><br>
+        <input type="number" id="q3" min="1" max="10" required><br>
+
+        <label>Klausimas 4: Ar turinys įdomus?</label><br>
+        <input type="number" id="q4" min="1" max="10" required><br>
+
+        <label>Klausimas 5: Ar lengva naršyti?</label><br>
+        <input type="number" id="q5" min="1" max="10" required><br>
+
+        <button type="button" id="submitBtn">Išsaugoti</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="LD12.js"></script>
+</body>
+</html>
+
